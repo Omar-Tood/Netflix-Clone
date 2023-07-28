@@ -190,9 +190,29 @@ label::after{
     font-size: 34px;
     position: absolute;
     right: 20px;
+    transition: transform 0.5s;
 
 }
 
 input[type ="radio"]{
     display: none;
+}
+
+.accordio .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+
+.accordio input[type ="radio"]:checked + label +  .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordio input[type ="radio"]:checked + label::after{
+    transform: rotate(135deg);
 }
