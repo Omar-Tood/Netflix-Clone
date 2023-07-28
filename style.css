@@ -216,3 +216,14 @@ input[type ="radio"]{
 .accordio input[type ="radio"]:checked + label::after{
     transform: rotate(135deg);
 }
+
+.faq .Email-sign-up{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+
+}
+
+.faq small{
+    font-size: 13px;
+}
